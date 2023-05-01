@@ -1,9 +1,6 @@
 from os import system
 
-try:
-    system("cls")
-except:
-    system("clear")
+system("python startup.py")
 
 def menu():
     try:
@@ -17,9 +14,16 @@ while True:
     menu()
     i = input("What utility would you like to use?(1-3) ")
     if i == "1":
-        system("python3 lanscan_arp.py")
+        try:
+            system("lanscan_arp.py")
+        except:
+            system("python lanscan_arp.py")
+
     elif i == "2":
-        system("python3 netScan.py")
+        try:
+            system("netScan.py")
+        except:
+            system("python netScan.py")
     elif i == "3":
         break
     else:
