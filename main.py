@@ -17,9 +17,9 @@ while True:
     menu()
     i = input("What utility would you like to use?(1-3) ")
     if i == "1":
-        system("lanscan_arp.py")
+        system("python3 lanscan_arp.py")
     elif i == "2":
-        system("netScan.py")
+        system("python3 netScan.py")
     elif i == "3":
         break
     else:
