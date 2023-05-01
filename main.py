@@ -1,9 +1,16 @@
 from os import system
 
-system("cls")
+try:
+    system("cls")
+except:
+    system("clear")
 
 def menu():
-    system("color 0a")
+    try:
+        system("color 0a")
+    except:
+        print("Hacker Mode")
+
     print("{:35} 1\n{:35} 2\n{:35} 3".format("Net Scan", "Port Scan", "Exit"))
 
 while True:

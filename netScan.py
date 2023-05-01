@@ -1,7 +1,6 @@
 import socket
 import time
 import threading
-import os
 
 from queue import Queue
 socket.setdefaulttimeout(0.25)
